@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Soma e média</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <h1>Soma e média js</h1>
+        <button class="enterPopup">Clique aqui</button>
+    
+    <dialog>
+        <h2>calcular soma e média</h2>
+        <p>Numero 1</p>
+        <input type="number" id="n1"/>
+        <p>Numero 2</p>
+        <input type="number" id="n2"/>
+        <p>Numero 3</p>
+        <input type="number" id="n3"/>
+        <button onclick="calcular()">Cacular</button>
+        <span>O resulatdo da soma é: </span>
+        <span id="media">O resultado da média é: </span>
+        <button class="fechar">fechar</button>
+    </dialog>
+    
+    <script>
+        const button = document.querySelector(".enterPopup");
+const popup = document.querySelector("dialog");
+const buttonClose = document.querySelector("dialog .fechar")
+
+var n1 = document.getElementById("n1").value
+var n2 = document.getElementById("n2").value
+var n3 = document.getElementById("n3").value
+var resultado = document.getElementById("#soma")
+var resultado2 = document.getElementById("#media")
+
+button.onclick = function (){
+    popup.showModal()
+}
+
+buttonClose.onclick = function() {
+    popup.close()
+}
+
+
+function calcular() {
+    var soma = (Number(n1) + Number(n2) + Number(n3))
+    var media = (Number(n1) + Number(n2) + Number(n3))/3
+    resultado.innerHTML = "o resulatado é: ${soma}"
+    resultado2.innerHTML = "o resultado é: ${media}"
+}
+
+    </script>
+</body>
+</html>
