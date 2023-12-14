@@ -1,15 +1,26 @@
 
 body{
-    background: blanchedalmond;
+    background-color: black;
 }
 
 h1{
-    color: black;
+    color: white;
+    text-align: center;
+}
+
+div{
+    background-color: white;
+    padding: 5%;
+
+}
+
+h4{
+    word-wrap: 50px;
     text-align: center;
 }
 
 .enterPopup{
-    background: black;
+    background: blue;
     padding: 15px;
     text-align: center;
     margin-left: auto;
@@ -21,11 +32,7 @@ h1{
     color: white;
 }
 
-dialog{
-    width: 400px;
-    height: 500px;
-}
-
-dialog::backdrop{
-    background-color: rgba(0,0,0,0,0.5);
+a{
+    color: white;
+    text-decoration: none;
 }

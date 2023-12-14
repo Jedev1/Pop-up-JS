@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+div{
+    background-color: white;
+    padding: 5%;
+
+}
+
+h4{
+    word-wrap: 50px;
+    text-align: center;
+}
+p{
+    margin-left: 43%;
+}
+
+input{
+    margin-left: 43%;
+}
+
+button{
+    margin-left: 43%;
+}
+
+span{
+    margin-left: 43%;
+}
+
+
