@@ -2,54 +2,18 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Soma e média</title>
+    <title>Mortalidade</title>
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <h1>Soma e média js</h1>
-        <button class="enterPopup">Clique aqui</button>
-    
-    <dialog>
-        <h2>calcular soma e média</h2>
-        <p>Numero 1</p>
-        <input type="number" id="n1"/>
-        <p>Numero 2</p>
-        <input type="number" id="n2"/>
-        <p>Numero 3</p>
-        <input type="number" id="n3"/>
-        <button onclick="calcular()">Cacular</button>
-        <span>O resulatdo da soma é: </span>
-        <span id="media">O resultado da média é: </span>
-        <button class="fechar">fechar</button>
-    </dialog>
-    
-    <script>
-        const button = document.querySelector(".enterPopup");
-const popup = document.querySelector("dialog");
-const buttonClose = document.querySelector("dialog .fechar")
+    <h1>Calculo taxa de mortalidade</h1>
+    <div>
+    <h4>A Taxa de Mortalidade é um índice utilizado na demografia, que se refere ao número de mortes registradas - geralmente por mil habitantes -, em determinada unidade geográfica (países, unidades da federação, regiões metropolitanas ou municípios) em um determinado período de tempo. Comumente, a unidade dessa taxa é expressa em pessoas/ano.
 
-var n1 = document.getElementById("n1").value
-var n2 = document.getElementById("n2").value
-var n3 = document.getElementById("n3").value
-var resultado = document.getElementById("#soma")
-var resultado2 = document.getElementById("#media")
-
-button.onclick = function (){
-    popup.showModal()
-}
-
-buttonClose.onclick = function() {
-    popup.close()
-}
-
-
-function calcular() {
-    var soma = (Number(n1) + Number(n2) + Number(n3))
-    var media = (Number(n1) + Number(n2) + Number(n3))/3
-    resultado.innerHTML = "o resulatado é: ${soma}"
-    resultado2.innerHTML = "o resultado é: ${media}"
-}
-
-    </script>
+        O estudo da taxa de mortalidade é importante devido à sua interrelação com a taxa de fecundidade, que por sua vez demonstra o crescimento do volume populacional e as transformações na composição etária da população.
+        
+        Uma vez que o país se encontra em uma etapa favorável de sua transição demográfica, é possível realizar empreendimentos ou aceleração de mecanismos que promovam o desenvolvimento socioeconômico da população. </h4>
+    </div>
+        <button class="enterPopup"><a href="popup.html">Clique aqui</a></button>
 </body>
 </html>

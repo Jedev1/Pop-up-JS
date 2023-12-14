@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/pop-up.css">
+    <title>Mortalidade</title>
+</head>
+<body>
+    <h2>Calcular a Taxa de Mortalidade</h2>
+    <div>
+        <p>Numero de óbitos</p>
+        <input type="number" id="n1" onchange="calcular()">
+
+        <p>Numero de habitantes</p>
+        <input type="number" id="n2" onchange="calcular()">
+
+        <br>
+        <br>
+        <button onclick="calcular()">Calcular</button>
+        <br>
+        <div id="resultado">
+            <p>Sua taxa de mortalidade corresponde a: {{calcular()}} %</p>
+        </div>
+        
+    </div>
+    
+    <script>
+function calcular() {
+    var n1 = parseFloat(document.getElementById("n1").value);
+    var n2 = parseFloat(document.getElementById("n2").value);
+
+    var calculo = (n1 * 1000) / n2;
+    document.getElementById("resultado").innerHTML = "Sua taxa de mortalidade corresponde a: " + calculo + " %";
+    return calculo;
+}
+    </script>
+</body>
+</html>
